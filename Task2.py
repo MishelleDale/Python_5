@@ -11,7 +11,7 @@ from random import randint
 def input_dat(name):
     x = int(input(f"{name}, введите количество конфет, которое возьмете от 1 до 28: "))
     while x < 1 or x > 28:
-        x = int(input(f"{name}, введите корректное количество конфет: "))
+        x = int(input(f"{name}, введите корректное количество конфет, от 1 до 28: "))
     return x
 
 
@@ -38,7 +38,7 @@ while value > 28:
         flag = False
         p_print(player1, k, counter1, value)
     else:
-        k = randint(1,29)
+        k = randint(1,28)
         counter2 += k
         value -= k
         flag = True
